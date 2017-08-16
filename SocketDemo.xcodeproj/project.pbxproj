@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		340AF6E11F441AC300029F88 /* CocoaSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 340AF6E01F441AC300029F88 /* CocoaSocketManager.m */; };
+		340AF6ED1F441B5200029F88 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 340AF6EA1F441B5200029F88 /* GCDAsyncSocket.m */; };
+		340AF6EE1F441B5200029F88 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 340AF6EC1F441B5200029F88 /* GCDAsyncUdpSocket.m */; };
 		34B5A2C51F317C4000459882 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B5A2C41F317C4000459882 /* main.m */; };
 		34B5A2C81F317C4000459882 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B5A2C71F317C4000459882 /* AppDelegate.m */; };
 		34B5A2CB1F317C4000459882 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B5A2CA1F317C4000459882 /* ViewController.m */; };
@@ -15,6 +18,7 @@
 		34B5A2D31F317C4000459882 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34B5A2D11F317C4000459882 /* LaunchScreen.storyboard */; };
 		34B5A2DE1F317C4000459882 /* SocketDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B5A2DD1F317C4000459882 /* SocketDemoTests.m */; };
 		34B5A2E91F317C4000459882 /* SocketDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B5A2E81F317C4000459882 /* SocketDemoUITests.m */; };
+		34B5A2F81F31E10500459882 /* SocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B5A2F71F31E10500459882 /* SocketManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		340AF6DF1F441AC300029F88 /* CocoaSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaSocketManager.h; sourceTree = "<group>"; };
+		340AF6E01F441AC300029F88 /* CocoaSocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaSocketManager.m; sourceTree = "<group>"; };
+		340AF6E91F441B5200029F88 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		340AF6EA1F441B5200029F88 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		340AF6EB1F441B5200029F88 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		340AF6EC1F441B5200029F88 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 		34B5A2C01F317C4000459882 /* SocketDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocketDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34B5A2C41F317C4000459882 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		34B5A2C61F317C4000459882 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +61,8 @@
 		34B5A2E41F317C4000459882 /* SocketDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocketDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34B5A2E81F317C4000459882 /* SocketDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketDemoUITests.m; sourceTree = "<group>"; };
 		34B5A2EA1F317C4000459882 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34B5A2F61F31E10500459882 /* SocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketManager.h; sourceTree = "<group>"; };
+		34B5A2F71F31E10500459882 /* SocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +90,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		340AF6E21F441B1F00029F88 /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				340AF6E91F441B5200029F88 /* GCDAsyncSocket.h */,
+				340AF6EA1F441B5200029F88 /* GCDAsyncSocket.m */,
+				340AF6EB1F441B5200029F88 /* GCDAsyncUdpSocket.h */,
+				340AF6EC1F441B5200029F88 /* GCDAsyncUdpSocket.m */,
+			);
+			name = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
 		34B5A2B71F317C4000459882 = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +124,15 @@
 		34B5A2C21F317C4000459882 /* SocketDemo */ = {
 			isa = PBXGroup;
 			children = (
+				340AF6E21F441B1F00029F88 /* CocoaAsyncSocket */,
 				34B5A2C61F317C4000459882 /* AppDelegate.h */,
 				34B5A2C71F317C4000459882 /* AppDelegate.m */,
 				34B5A2C91F317C4000459882 /* ViewController.h */,
 				34B5A2CA1F317C4000459882 /* ViewController.m */,
+				34B5A2F61F31E10500459882 /* SocketManager.h */,
+				34B5A2F71F31E10500459882 /* SocketManager.m */,
+				340AF6DF1F441AC300029F88 /* CocoaSocketManager.h */,
+				340AF6E01F441AC300029F88 /* CocoaSocketManager.m */,
 				34B5A2CC1F317C4000459882 /* Main.storyboard */,
 				34B5A2CF1F317C4000459882 /* Assets.xcassets */,
 				34B5A2D11F317C4000459882 /* LaunchScreen.storyboard */,
@@ -273,9 +301,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				340AF6ED1F441B5200029F88 /* GCDAsyncSocket.m in Sources */,
+				340AF6EE1F441B5200029F88 /* GCDAsyncUdpSocket.m in Sources */,
 				34B5A2CB1F317C4000459882 /* ViewController.m in Sources */,
 				34B5A2C81F317C4000459882 /* AppDelegate.m in Sources */,
+				34B5A2F81F31E10500459882 /* SocketManager.m in Sources */,
 				34B5A2C51F317C4000459882 /* main.m in Sources */,
+				340AF6E11F441AC300029F88 /* CocoaSocketManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +541,7 @@
 				34B5A2EF1F317C4000459882 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34B5A2F01F317C4000459882 /* Build configuration list for PBXNativeTarget "SocketDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +550,7 @@
 				34B5A2F21F317C4000459882 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34B5A2F31F317C4000459882 /* Build configuration list for PBXNativeTarget "SocketDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +559,7 @@
 				34B5A2F51F317C4000459882 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
